@@ -1,0 +1,16 @@
+name: Email Step CI
+
+on:
+  push:
+    branches:["main"]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verififcation for 21f3000581@ds.study.iitm.ac.in
+        run:run: echo "This step is being checked by the grader!"
+     
+      - name: A second step
+        run: echo "Hello, world!"
